@@ -222,7 +222,10 @@ it as a syntax error", tell them to stop using broken IDEs.
 	changes and the comments become both distracting and wrong.  There should
 	be one source of truth, and comments must not become a conflicting
 	source.  If the code needs comments to be understood, then the code
-	should be refactored with better names.
+	should be refactored with better names.  If the redundant comments
+	exist to satisfy some auto-generating documentation tool-chain (eg
+	Doxygen), fix the tool chain.  Do not allow poorly engineered tooling
+	to undermine your code quality.
 
 [^no-conventional-commits]:
 	https://wrp.github.io/blog/2024/01/03/conventional-commits.html
