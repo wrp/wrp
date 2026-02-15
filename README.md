@@ -3,7 +3,7 @@
 - Avoid usage spew. [^usage]
 - A stack trace is not an error message; it is an embarrassment.
 - Write errors to stderr.  Write output to stdout.  Write logs somewhere else.
-- Instrument extensively, but don't use logs as metrics.
+- Instrument extensively, but do not extract metrics from logs.
 - Version everything, but do not hardcode version numbers in a file; derive them from a VCS.
 - Never deploy a mutable ref (eg "latest"); always use a fixed version.
 - Design for the interface, not the implementation.
