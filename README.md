@@ -15,6 +15,8 @@
 - Make everything local.  Web-based docs are useless on an airplane.  Put your docs in git.
 - Configuration files are not documentation. [^5]
 - Comments are not documentation. [^comments]
+- Header files are not documentation.
+- Comments are not a language tutorial.
 - Test functionality, not platform. [^8]
 - Use roles extensively. [^roles]
 - Plan for failure, automate, test extensively.
