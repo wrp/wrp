@@ -147,7 +147,9 @@ it as a syntax error", tell them to stop using broken IDEs.
 	two diffs, consider how long it takes to understand fully
 	what each does:
 
-	Compare this patch:
+	Compare these two patches using different common styles:
+
+	Style 1: Aligning parameters in subsequent lines with ill-defined indentation.
 	```
 	-        auto foo = this_function_has_a_long_name(a_long_named_arugment,
 	-                                                 another_long_argument,
@@ -163,18 +165,19 @@ it as a syntax error", tell them to stop using broken IDEs.
 	+                            most_important_argument);
 	```
 
-	To this patch
+	Style 2: Adding one level of indentation to parameter lines.
 	```
 	-       auto foo = this_function_has_a_long_name(
 	+       auto foo = new_name(
-			a_long_named_arugment,
-			another_long_argument,
-			a_third_argument_with_a_longish_name,
-			yet_another_absurdly_long_name,
+	                a_long_named_arugment,
+	                another_long_argument,
+	                a_third_argument_with_a_longish_name,
+	                yet_another_absurdly_long_name,
 	-               your_dog_is_named_barry,
 	+               your_dog_is_named_harry,
-			most_important_argument
+	                most_important_argument
 	```
+
 
 
 	To the casual reader, the first patch obscures the fact that
