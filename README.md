@@ -19,13 +19,13 @@
 - Comments are not a language tutorial.
 - Test functionality, not platform. [^8]
 - Use roles extensively. [^roles]
-- Plan for failure, automate, test extensively.
 
 
 ## pithy slogans:
 - Explicit is better than implicit.
 - Fail loudly (but tersely), succeed quietly. [^errors]
 - Simple, elegant, robust.  Choose 3.
+- Plan for failure, automate, test extensively.
 
 
 ## vcs best practices:
