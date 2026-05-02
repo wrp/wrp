@@ -67,8 +67,13 @@ it as a syntax error", tell them to stop using broken IDEs.
 	the current behavior of 'git diff' when executed in a
 	directory that is not a git repo.  The user does not need
 	to see 129 lines of text!  The user only needs to see the
-	first line ("warning: Not a git repository"), and the other
-	128 lines are just an irritating distraction.
+	first line ("warning: Not a git repository"); the other
+	128 lines are an irritating distraction.  A usage statement
+	is not an error message; it should only be provided when
+	explicitly requested.  Writing proper error messages is hard,
+	and avoiding that challenge by printing a usage statement
+	instead of an error message is lazy.  Supplementing an error
+	message with a usage statement is just annoying.
 [^2]:
 	Humans should not care about the underlying implementation.
 	If you name your message queue "kafka", then it will be extremely
