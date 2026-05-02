@@ -152,8 +152,6 @@ it as a syntax error", tell them to stop using broken IDEs.
 	two diffs, consider how long it takes to understand fully
 	what each does:
 
-	Compare these two patches using different common styles:
-
 	Style 1: Aligning parameters in subsequent lines with ill-defined indentation.
 	```
 	-        auto foo = this_function_has_a_long_name(a_long_named_arugment,
