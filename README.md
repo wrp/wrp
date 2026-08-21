@@ -74,7 +74,11 @@ it as a syntax error", tell them to stop using broken IDEs.
 	explicitly requested.  Writing proper error messages is hard,
 	and avoiding that challenge by printing a usage statement
 	instead of an error message is lazy.  Supplementing an error
-	message with a usage statement is just annoying.
+	message with a usage statement is just annoying.  When
+	debugging an issue, it is frustrating to look at a log and
+	see 1000 lines of "Not a git repository".  It is physically
+	painful to see 129,000 lines of usage interspersed with a
+	fatal error disguised as a warning.
 [^naming]:
 	Humans should not care about the underlying implementation.
 	If you name your message queue "kafka", then it will be extremely
