@@ -11,7 +11,7 @@
 - Don't use the implementation as a basis for the name of a service. [^naming]
 - Always include timezone in a timestamp representation.  ISO-8601/rfc3339 [^ts]
 - Never use relative timestamps (eg, "6 hours ago") [^no-relative-time]
-- Keep your code narrow. [^6]
+- Keep your code narrow. [^narrow]
 - Make everything local.  Web-based docs are useless on an airplane.  Put your docs in git.
 - Configuration files are not documentation. [^5]
 - Comments are not documentation. [^comments]
@@ -124,7 +124,7 @@ it as a syntax error", tell them to stop using broken IDEs.
 	is much more difficult to read than a simple 10 line config,
 	and you certainly don't need all that documentation repeated on
 	every production replica.
-[^6]:
+[^narrow]:
 	Restricting line widths to a reasonable value (eg, 78) allows
 	more views.  There is a big push for allowing 120 or 160, or
 	unlimited columns.  There is some validity to the argument that we
@@ -141,7 +141,7 @@ it as a syntax error", tell them to stop using broken IDEs.
 	should be able to have a view into your code that allows them to
 	see adequate context on a width of 80.	Personally, I would push
 	for 60 so I don't need to turn my device sideways and go into
-	landscape mode, but 80 has historical precedence.  But excessive
+	landscape mode, but 80 has historical precedence.  Excessive
 	indendation is a sign of a lack of decomposition, so just keep
 	your line widths below 80 (allowing for 8 space indentation).  As
 	I write this, I have 3 terminals currently open on a width of 30;
