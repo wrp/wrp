@@ -8,7 +8,7 @@
 - Never deploy a mutable ref (eg "latest"); always use a fixed version.
 - Design for the interface, not the implementation.
 - Use descriptive names for projects. Call your auth service "auth-service", not "jezebel".
-- Don't use the implementation as a basis for the name of a service. [^2]
+- Don't use the implementation as a basis for the name of a service. [^naming]
 - Always include timezone in a timestamp representation.  ISO-8601/rfc3339 [^ts]
 - Never use relative timestamps (eg, "6 hours ago") [^no-relative-time]
 - Keep your code narrow. [^6]
@@ -74,7 +74,7 @@ it as a syntax error", tell them to stop using broken IDEs.
 	and avoiding that challenge by printing a usage statement
 	instead of an error message is lazy.  Supplementing an error
 	message with a usage statement is just annoying.
-[^2]:
+[^naming]:
 	Humans should not care about the underlying implementation.
 	If you name your message queue "kafka", then it will be extremely
 	difficult to migrate to KubeMQ.  This is the same rationale for
