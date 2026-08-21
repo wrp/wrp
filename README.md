@@ -22,7 +22,7 @@
 
 
 ## pithy slogans:
-- Explicit is better than implicit.
+- Explicit is better than implicit.  [^errexit]
 - Fail loudly (but tersely), succeed quietly. [^errors]
 - Simple, elegant, robust.  Choose 3.
 - Plan for failure, automate, test extensively.
@@ -229,6 +229,9 @@ it as a syntax error", tell them to stop using broken IDEs.
 	exist to satisfy some auto-generating documentation tool-chain (eg
 	Doxygen), fix the tool chain.  Do not allow poorly engineered tooling
 	to undermine your code quality.
-
+[^errexit]:
+	As a direct corollary, you must never use errexit in a shell.  The
+	pitfalls of errexit (aka "set -e") are legion, and "|| exit" ought
+	to be embraced.
 [^no-conventional-commits]:
 	https://wrp.github.io/blog/2024/01/03/conventional-commits.html
