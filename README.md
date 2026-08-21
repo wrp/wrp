@@ -36,7 +36,7 @@
 
 
 ## git specific best practices:
-- Put meta data for commits in a git trailer. [^no-conventional-commits]
+- Put meta data for commits in a git trailer, not the subject. [^no-conventional-commits]
 - Put only project specific items in .gitignore.  [^4]
 
 
