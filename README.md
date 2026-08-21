@@ -1,4 +1,5 @@
 # general best practices:
+- Avoid slavish adherence to style guides and best-practice documents.
 - Have a single source of truth.
 - Avoid usage spew. [^usage]
 - A stack trace is not an error message; it is an embarrassment.
