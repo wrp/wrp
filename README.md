@@ -3,6 +3,7 @@
 - Have a single source of truth.
 - Avoid usage spew. [^usage]
 - A stack trace is not an error message; it is an embarrassment.
+- Commit *BEFORE* you deploy.
 - Write errors to stderr.  Write output to stdout.  Write logs somewhere else.
 - Instrument extensively, but do not extract metrics from logs.
 - Version everything, but do not hardcode version numbers in a file; derive them from a VCS.
