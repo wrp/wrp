@@ -44,7 +44,7 @@
 ## General thoughts:
 Do not bend your workflow to satsify your tools; fix your tools to fit
 your workflow.  For example, if someone tells you "Even though the syntax
-does not require it, we leave double quotes here because some IDEs flags
+does not require it, we leave double quotes here because some IDEs flag
 it as a syntax error", tell them to stop using broken IDEs.
 
 
