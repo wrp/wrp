@@ -63,18 +63,16 @@ it as a syntax error", tell them to stop using broken IDEs.
 	(let the caller wrap the command if timestamps are desired,
 	maybe add a flag to enable timestamps).
 [^usage]:
-	Usage spew is the act of printing a "wall of text" in
-	response to a simple error.  The wall of text generally
-	obscures the error message.  A concrete example of this is
-	the current behavior of 'git diff' when executed in a
-	directory that is not a git repo.  The user does not need
-	to see 129 lines of text!  The user only needs to see the
-	first line ("warning: Not a git repository"); the other 128
-	lines are an irritating distraction.  When debugging an
-	issue, it is frustrating to look at a log and see 1000 lines
-	of "Not a git repository".  It is physically painful to see
-	129,000 lines of usage interspersed with a fatal error
-	disguised as a warning.
+	Usage spew is the act of responding to a simple error by
+	printing a "wall of text" that obscures the error
+	message.  A concrete example of this is the current behavior
+	of 'git diff'.  When executed in a directory that is not a
+	git repo, git (2.56.0) prints 131 lines of text, of which
+	only the first line ("warning: Not a git repository") is
+	useful.  When diagnosing an issue, it is frustrating to
+	look at a log and see 1000 lines of "Not a git repository".
+	It is physically painful to see 131,000 lines of usage
+	interspersed with a fatal error disguised as a warning.
 
 	A usage statement is not an error message; it should only
 	be provided when explicitly requested.  Writing proper error
