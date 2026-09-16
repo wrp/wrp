@@ -92,15 +92,13 @@ it as a syntax error", tell them to stop using broken IDEs.
 	existing tooling.  The problem is completely avoided if you had
 	originally named the program `frob` instead of `frob.py`.
 [^ts]:
-	Never display or write "07:18".  Always write "07:18:00-06:00"
-	or "13:18:00Z" or "06:18T-7".  It is less important how you choose
-	to convey timezone, as long as it is done.  And don't use names; use
-	numbers.  Quick, how much time is there between "07:18 PST" and
-	"06:48 IST"?  Approximately where in the world is EAT?  Now,
-	answer those questions for "07:18T-0700" and "06:48T+0530"
-	and "UTC+3"  Using timezone names requires external information,
-	but that information is conveyed directly if you use the right
-	format.
+	Never display times like "07:48".  Always write "07:48:00-06:00"
+	or "13:48:00Z" or "0648T-7".  Do not use names; use numbers.
+	Quick, how much time is there between "06:48 PST" and "19:18
+	IST"?  Approximately where in the world is EAT?  Now, answer
+	those questions for "06:48T-0700" and "19:18T+0530" and
+	"UTC+3".  Using timezone names requires external information,
+	and it is better to convey that information directly.
 
 	Never tell the user "We are using your timezone"; be explicit
 	and tell them what you think their timezone is.  When the
